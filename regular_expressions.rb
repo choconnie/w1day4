@@ -1,6 +1,5 @@
 # Determine whether a string contains a SIN (Social Insurance Number).
 # A SIN is 9 digits and we are assuming that they must have dashes in them
-require 'pry'
 def has_sin?(string)
   !(/\s\d{3}-\d{3}-\d{3}$/ !~ string)
 end
@@ -88,3 +87,9 @@ puts format_sins(string) == string
 
 string = "please confirm your identity: 123456789"
 puts format_sins(string) == "123-456-789"
+
+
+#################
+# Adding driver code is helpful because wanted solutions are already set.
+# By checking the results from driver code, major errors can be found easily.
+#################
